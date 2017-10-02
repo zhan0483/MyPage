@@ -1,7 +1,7 @@
 body {
     margin: 0 auto;
     max-width: 100%;
-    min-width: 800px;
+    min-width: 850px;
     font-family: "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
     padding-bottom: 4em;
@@ -77,6 +77,12 @@ h3.projects{
     padding-top: 20px;
     margin: 0px;
 }
+h3.projects img{
+    height: 15px;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 div.detail{
     height: auto;
     display:none;
@@ -141,6 +147,14 @@ nav div{
     font-size: 1.9rem;
     font-family: Book Antiqua;
 }
+nav div img{
+    height: 40px;
+    width: auto;
+}
+nav div img:hover{
+    height: 42px;
+    width: auto;
+}
 nav li {
     padding-top: 10px;
     list-style-type: none;
@@ -162,6 +176,7 @@ nav div a:hover, .active a {
     text-shadow: 0 0 20px #979dad;
     font-size: 1.914rem;
 }
+
 .circleBase {
     display:inline-block;
     border-radius: 50%;
@@ -183,7 +198,17 @@ nav div a:hover, .active a {
     font-size: 120%;
     text-decoration: none;
 }
-
+.photoLink:link{
+    color:darkviolet;
+    text-decoration: none;
+}
+.photoLink:visited{
+    color:darkviolet;
+    text-decoration: none;
+}
+.photoLink:hover{
+    color: dodgerblue;
+}
 
 
 footer {

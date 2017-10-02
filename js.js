@@ -5,7 +5,7 @@ var project2 = document.getElementById("project2");
 var project2d = document.getElementById("project2d");
 var project2visibility = 0;
 
-project1.onclick = function(){
+project1.onclick = function () {
     if (project1visibility == 0){
         project1visibility = 1;
         project1d.style.display = 'inline-block';

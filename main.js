@@ -10,8 +10,21 @@ $(document).ready(function(){
     });
     $('h3').click(function(){
         var target = '#'+ $(this).get(0).id +'d';
+        var target2 = '#' + $(this).get(0).id + 'i';
+        if ($(target).css('display') == 'none'){
+                var rotation = 90;
+        }else{
+            var rotation = 0;
+        }
         $(target).animate({
             height:'toggle'
+        });
+        $(target2).css({
+            '-webkit-transform' : 'rotate('+ rotation +'deg)',
+            '-moz-transform' : 'rotate('+ rotation +'deg)',
+            '-ms-transform' : 'rotate('+ rotation +'deg)',
+            'transform' : 'rotate('+ rotation +'deg)',
+            'transition-duration':'0.4s'
         });
     });
     $('#contact-img').find('img').mouseenter(function(){
